@@ -39,7 +39,7 @@ $ cmake --build .
 ### Run
 If the build process completed successfully, you can run:
 ```
-$ ./gst-splitter
+$ ./gst-splitter rtmp://<RTMP_URL>:<RTMP_PORT>/<APP_NAME>/<STREAM_NAME>
 ```
 
 If you want to test the RTMP stream locally on your machine, you can use the Docker nginx RTMP module image as local RTMP server. Run ```docker run -d -p 1935:1935 tiangolo/nginx-rtmp``` to create the local server and then add the RTMP endpoint with a random stream key when running gst-splitter. Example:
