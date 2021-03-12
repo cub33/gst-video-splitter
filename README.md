@@ -25,6 +25,11 @@ gst-launch-1.0 audiotestsrc wave=pink-noise ! spacescope ! videoconvert ! tee na
 
 ## How to play
 ### Build
+First, install GStreamer libraries. On a Debian-based you can just run:
+```
+sudo apt install libglib2.0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+```
+then, build the project:
 ```
 $ mkdir build
 $ cd build
@@ -32,6 +37,7 @@ $ cmake ..
 $ cmake --build .
 ```
 ### Run
+If the build process completed successfully, you can run:
 ```
 $ ./gst-splitter
 ```
