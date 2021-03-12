@@ -26,6 +26,7 @@ gst-launch-1.0 audiotestsrc wave=pink-noise ! spacescope ! videoconvert ! tee na
 ## How to play
 ### Build
 ```
+$ mkdir build
 $ cd build
 $ cmake ..
 $ cmake --build .
